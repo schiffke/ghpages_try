@@ -32,5 +32,6 @@ section, aside {
     margin-left: 20px;
     background-color: lightgrey;
     border: 1px solid grey;
+    border-radius: 5px;
     text-align: center;
 }
