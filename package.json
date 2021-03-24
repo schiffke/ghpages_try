@@ -1,0 +1,25 @@
+{
+  "name": "ghpages_try",
+  "version": "1.0.0",
+  "description": "Own github webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log(\"this is a test\")"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schiffke/ghpages_try.git"
+  },
+  "author": "Nick Schiffke",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jquery": "^3.6.0",
+    "jquery-migrate": "^3.3.2",
+    "node-fetch": "^2.6.1"
+  },
+  "bugs": {
+    "url": "https://github.com/schiffke/ghpages_try/issues"
+  },
+  "homepage": "https://github.com/schiffke/ghpages_try#readme"
+}
