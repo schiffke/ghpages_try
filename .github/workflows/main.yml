@@ -1,0 +1,15 @@
+name: Hello World
+
+on:
+  push:
+    branches: [ ghpages_try ]
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+    steps:
+      -name: Checkout source code
+      uses: actions/checkout@v2
+      -name: Echo Hello World
+      run: echo "Hello World"
