@@ -1,3 +1,4 @@
 .README
 node_modules/
 .github/
+*.yml
