@@ -1,5 +1,5 @@
-name: Hello World
- 
+name: Commit Date Committer
+
 on:
   push:
     branches: [ ghpages_try ]
@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
-      - name: Echo Hello World
-        run: echo "Hello World"
+      - name: run json generator
+        run: github_api_handles.js
