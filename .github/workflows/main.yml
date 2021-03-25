@@ -20,5 +20,18 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm run commitCommitter
       
+      - name: remote setting git url
+        run: git remote set-url origin https://github.com/schiffke/ghpages_try
+      - name: check for changes
+        run: git status
+      - name: stage changed files
+        run: git add ./src/javascript/date.json
+      - name: commit changed files
+        run: git commit -m "Auto updating date.json"
+      - name: fetch from gh-pages
+        run: git fetch origin gh-pages
+      - name: push code to gh-pages
+        run: git push origin HEAD:gh-pages
+      
 
    
