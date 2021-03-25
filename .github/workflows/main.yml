@@ -22,6 +22,10 @@ jobs:
       
       - name: remote setting git url
         run: git remote set-url origin https://github.com/schiffke/ghpages_try
+      - name: set user email
+        run: git config --global user.email "Nick.Schiffke@yahoo.com"
+      - name: set user name
+        run: git config --global user.name "Nick Schiffke"
       - name: check for changes
         run: git status
       - name: stage changed files
@@ -32,6 +36,5 @@ jobs:
         run: git fetch origin gh-pages
       - name: push code to gh-pages
         run: git push origin HEAD:gh-pages
-      
 
    
