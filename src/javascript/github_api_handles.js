@@ -17,14 +17,14 @@ fetch(`https://api.github.com/repos/${user}/${repo}/commits`, {
             commitDate.push(json[0].commit.author.date);           
         
 
-        fs.readFile('../../index.html', 'utf8', function (err,data) {
+        fs.readFile('./index.html', 'utf8', function (err,data) {
         if (err) throw err;
 
         let finalDate = JSON.stringify(commitDate).replace(/[TZ\]\[\"\""]/g, " ");
         let toReplace = `id="date-footer"> Last Commit: ${finalDate} </p`
         let result = data.replace(/id="date-footer">(.*)<\/p/, toReplace);
 
-        fs.writeFile('../../index.html', result, 'utf8', function (err) {
+        fs.writeFile('./index.html', result, 'utf8', function (err) {
             if (err) throw err;
             console.log("html has been updated")
         });
