@@ -29,9 +29,9 @@ jobs:
       - name: check for changes
         run: git status
       - name: stage changed files
-        run: git add ./src/javascript/date.json
+        run: git add ./index.html
       - name: commit changed files
-        run: git commit -m "Auto updating date.json"
+        run: git commit -m "Auto updating index.html"
       - name: fetch from gh-pages
         run: git fetch origin gh-pages
       - name: push code to gh-pages
