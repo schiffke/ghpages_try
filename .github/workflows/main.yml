@@ -4,11 +4,6 @@ on:
   push:
     branches: [ ghpages_try ]
  
-jobs:
-  echo:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout source code
-        uses: actions/checkout@v2
-      - name: run json generator
-        run: github_api_handles.js
+runs:
+  using: 'node14'
+  main: src\javascript\github_api_handles.js
