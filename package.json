@@ -4,7 +4,7 @@
   "description": "Own github webpage",
   "main": "index.js",
   "scripts": {
-    "test": "console.log(\"this is a test\")"
+    "commitCommitter": "node ./src/javascript/github_api_handles.js"
   },
   "repository": {
     "type": "git",
